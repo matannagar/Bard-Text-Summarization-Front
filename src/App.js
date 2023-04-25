@@ -13,20 +13,17 @@ import usePost from './hooks/usePost';
 import { History } from './components/History';
 
 function App() {
-
-  const { setFile,
-    setUrl, message, setMessage,
-    fetchInProgress,
-    summary, post } = usePost()
+  const { setFile, url, setUrl, message, setMessage, fetchInProgress,
+    summary, post } = usePost();
 
   return (
-    <div className="App">
+    <div className='App'>
       <Header />
       <Introduction />
       <div className='container'>
         <div className='right'>
           <UploadButton setFile={setFile} />
-          <UrlBar setUrl={setUrl} />
+          <UrlBar url={url} setUrl={setUrl} />
           <Dragndrop setFile={setFile} setMessage={setMessage} />
           <LimitWords />
           <Summarize handleSubmit={post} />
@@ -38,9 +35,9 @@ function App() {
       <Summarization
         fetchInProgress={fetchInProgress}
         summary={summary}
-        message={message} />
+        message={message}
+      />
       <ShareBar text={summary} />
-
     </div>
   );
 }

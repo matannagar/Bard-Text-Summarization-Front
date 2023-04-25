@@ -100,7 +100,6 @@ input[type="text"] {
 }
 
 .left {
-  overflow-y: auto;
   top: 0;
   height: 356px;
   width: 669px;

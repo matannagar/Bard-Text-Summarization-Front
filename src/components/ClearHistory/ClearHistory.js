@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 /**
  * ClearHistory is a component that provides a button that, when clicked,
@@ -8,15 +8,17 @@ import React from 'react'
  *   parent component's state.
  */
 
+import './ClearHistory.css';
+
 export function ClearHistory({ setItems }) {
-    const clearLocalStorage = function () {
-        // Clear the items in localStorage and the parent component's state
-        localStorage.setItem('items', '')
-        setItems([])
-    }
-    return (
-        <div className='clearHistory'>
-            <button onClick={clearLocalStorage}>clear History</button>
-        </div>
-    )
+  const clearLocalStorage = function () {
+    // Clear the items in localStorage and the parent component's state
+    localStorage.setItem('items', '');
+    setItems([]);
+  };
+  return (
+    <div className='clearHistory'>
+      <button onClick={clearLocalStorage}>Clear</button>
+    </div>
+  );
 }

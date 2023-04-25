@@ -1,13 +1,13 @@
-import React from 'react'
+import React from 'react';
 
-function UrlBar({ setUrl }) {
-    return (
-        <div className='url bar'>
-            <input type='text'
-                onChange={e => setUrl(e.target.value)}
-                placeholder='Please enter URL here...' ></input>
-        </div>
-    )
+function UrlBar({ setUrl, url }) {
+  return (
+    <div className='url bar'>
+      <input type='text' value={ url } onChange={(e) => setUrl(e.target.value)}
+        placeholder='Please enter URL here...'
+      ></input>
+    </div>
+  );
 }
 
-export default UrlBar
+export default UrlBar;

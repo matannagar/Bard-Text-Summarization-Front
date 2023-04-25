@@ -1,0 +1,21 @@
+.clearHistory button {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    border: 2px solid;
+    background-color: #458cfe;
+    color: white;
+
+    height: 35px;
+    width: 60px;
+
+    margin-top: 7px;
+}
+
+.clearHistory button:hover {
+    background-color: #0062ff;
+}
