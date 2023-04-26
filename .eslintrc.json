@@ -17,7 +17,6 @@
         "react"
     ],
     "rules": {
-        "react/prop-types": "off",
-        "quotes": ["single", { "avoidEscape": true }]
+        "react/prop-types": "off"
       }
 }

@@ -1,5 +1,7 @@
+const baseUrl = 'https://bard-summarization-backend.onrender.com'
+
 export const api = {
-    parser: 'http://localhost:3000/api/parser',
-    webParser: 'http://localhost:3000/api/webparser',
-    summarizer: 'http://localhost:3000/api/summarize'
+    parser: `${baseUrl}/api/parser`,
+    webParser: `${baseUrl}/api/webparser`,
+    summarizer: `${baseUrl}/api/summarize`
 }
